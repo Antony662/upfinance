@@ -1,13 +1,460 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="https://base44.com/logo_v2.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Base44 APP</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Up Money - Sistema Financeiro Inteligente via WhatsApp</title>
+    <meta name="description" content="Controle suas finanças de forma simples e inteligente através do WhatsApp. Registre transações, receba relatórios e insights automáticos.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="logo">
+                    <h2>Up Money</h2>
+                </div>
+                <div class="nav-links">
+                    <a href="#beneficios">Benefícios</a>
+                    <a href="#como-funciona">Como Funciona</a>
+                    <a href="#precos">Preços</a>
+                    <a href="#faq">FAQ</a>
+                    <a href="#cta-final" class="cta-button">Começar Agora</a>
+                </div>
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content" data-aos="fade-up">
+                <h1>Controle suas finanças<br>direto no <span class="highlight">WhatsApp</span></h1>
+                <p>O sistema financeiro mais inteligente e simples do mercado. Registre transações, receba relatórios e insights automáticos sem complicação.</p>
+                <div class="hero-buttons">
+                    <a href="#precos" class="btn btn-primary">Começar Agora</a>
+                    <a href="#demo" class="btn btn-secondary">Ver Demonstração</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">10k+</span>
+                        <span class="stat-label">Usuários ativos</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">500k+</span>
+                        <span class="stat-label">Transações processadas</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">4.9</span>
+                        <span class="stat-label">Avaliação média</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual" data-aos="fade-left">
+                <div class="whatsapp-mockup">
+                    <div class="phone-frame">
+                        <div class="phone-header">
+                            <div class="contact-info">
+                                <div class="avatar">💰</div>
+                                <div class="contact-name">Up Money</div>
+                            </div>
+                        </div>
+                        <div class="chat-messages">
+                            <div class="message sent">
+                                <div class="message-content">Recebi R$ 2.500 salário</div>
+                                <div class="message-time">14:30</div>
+                            </div>
+                            <div class="message received">
+                                <div class="message-content">✅ Receita registrada!<br>💰 Saldo atual: R$ 3.250<br>📊 Seu orçamento mensal está 20% acima da meta!</div>
+                                <div class="message-time">14:31</div>
+                            </div>
+                            <div class="message sent">
+                                <div class="message-content">Gastei R$ 45 mercado</div>
+                                <div class="message-time">18:15</div>
+                            </div>
+                            <div class="message received">
+                                <div class="message-content">✅ Despesa registrada na categoria "Alimentação"<br>💳 Saldo atual: R$ 3.205<br>📈 Você gastou 15% menos que no mês passado!</div>
+                                <div class="message-time">18:16</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefícios Section -->
+    <section id="beneficios" class="benefits">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Por que escolher o Up Money?</h2>
+                <p>Transforme sua relação com o dinheiro usando a simplicidade do WhatsApp</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="benefit-icon">💬</div>
+                    <h3>Simplicidade Total</h3>
+                    <p>Use o WhatsApp que você já conhece e ama. Sem apps complicados, sem interfaces confusas.</p>
+                </div>
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="benefit-icon">🤖</div>
+                    <h3>Inteligência Artificial</h3>
+                    <p>Análises automáticas, categorização inteligente e insights personalizados para suas finanças.</p>
+                </div>
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="benefit-icon">⚡</div>
+                    <h3>Praticidade Máxima</h3>
+                    <p>Registre transações em segundos, receba relatórios instantâneos e tenha tudo na palma da mão.</p>
+                </div>
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="benefit-icon">🔒</div>
+                    <h3>Segurança Garantida</h3>
+                    <p>Seus dados financeiros protegidos com criptografia de ponta e total privacidade.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Como Funciona Section -->
+    <section id="como-funciona" class="how-it-works">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Como funciona</h2>
+                <p>3 passos simples para revolucionar suas finanças</p>
+            </div>
+            <div class="steps">
+                <div class="step" data-aos="fade-up" data-aos-delay="100">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Adicione nosso número</h3>
+                        <p>Salve o número do Up Money no seu WhatsApp e inicie uma conversa conosco.</p>
+                    </div>
+                </div>
+                <div class="step" data-aos="fade-up" data-aos-delay="200">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Envie suas transações</h3>
+                        <p>Digite naturalmente: "Recebi R$ 500 freelance" ou "Gastei R$ 50 restaurante".</p>
+                    </div>
+                </div>
+                <div class="step" data-aos="fade-up" data-aos-delay="300">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Receba insights inteligentes</h3>
+                        <p>Obtenha relatórios automáticos, análises e dicas personalizadas para suas finanças.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="precos" class="pricing">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Escolha seu plano</h2>
+                <p>Planos flexíveis para todos os perfis financeiros</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="pricing-header">
+                        <h3>Básico</h3>
+                        <div class="price">
+                            <span class="currency">R$</span>
+                            <span class="amount">19,90</span>
+                            <span class="period">/mês</span>
+                        </div>
+                    </div>
+                    <ul class="features">
+                        <li>✅ Registro de transações</li>
+                        <li>✅ Categorização automática</li>
+                        <li>✅ Relatório mensal</li>
+                        <li>✅ Suporte via WhatsApp</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline">Começar Agora</a>
+                </div>
+                <div class="pricing-card popular" data-aos="fade-up" data-aos-delay="200">
+                    <div class="popular-badge">Mais Popular</div>
+                    <div class="pricing-header">
+                        <h3>Intermediário</h3>
+                        <div class="price">
+                            <span class="currency">R$</span>
+                            <span class="amount">39,90</span>
+                            <span class="period">/mês</span>
+                        </div>
+                    </div>
+                    <ul class="features">
+                        <li>✅ Tudo do plano Básico</li>
+                        <li>✅ Análises semanais</li>
+                        <li>✅ Metas financeiras</li>
+                        <li>✅ Alertas inteligentes</li>
+                        <li>✅ Exportação de dados</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Começar Agora</a>
+                </div>
+                <div class="pricing-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="pricing-header">
+                        <h3>Avançado</h3>
+                        <div class="price">
+                            <span class="currency">R$</span>
+                            <span class="amount">89,90</span>
+                            <span class="period">/mês</span>
+                        </div>
+                    </div>
+                    <ul class="features">
+                        <li>✅ Tudo do plano Intermediário</li>
+                        <li>✅ Análises preditivas</li>
+                        <li>✅ Consultoria financeira</li>
+                        <li>✅ Integração com bancos</li>
+                        <li>✅ Relatórios personalizados</li>
+                        <li>✅ Suporte prioritário</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline">Começar Agora</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section id="demo" class="demo">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Veja o Up Money em ação</h2>
+                <p>Exemplos reais de como usar o sistema no seu dia a dia</p>
+            </div>
+            <div class="demo-content">
+                <div class="demo-commands" data-aos="fade-up">
+                    <h3>Comandos que você pode usar:</h3>
+                    <div class="command-examples">
+                        <div class="command">
+                            <span class="command-text">"Recebi R$ 3000 salário"</span>
+                            <span class="command-result">→ Receita registrada na categoria Trabalho</span>
+                        </div>
+                        <div class="command">
+                            <span class="command-text">"Gastei R$ 120 supermercado"</span>
+                            <span class="command-result">→ Despesa registrada na categoria Alimentação</span>
+                        </div>
+                        <div class="command">
+                            <span class="command-text">"Relatório do mês"</span>
+                            <span class="command-result">→ Relatório completo com gráficos e análises</span>
+                        </div>
+                        <div class="command">
+                            <span class="command-text">"Quanto posso gastar hoje?"</span>
+                            <span class="command-result">→ Cálculo baseado no seu orçamento</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="demo-report" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Relatório gerado automaticamente:</h3>
+                    <div class="report-mockup">
+                        <div class="report-header">
+                            <h4>📊 Relatório Mensal - Janeiro 2024</h4>
+                        </div>
+                        <div class="report-stats">
+                            <div class="stat-item">
+                                <span class="stat-label">Receitas</span>
+                                <span class="stat-value positive">R$ 4.500,00</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Despesas</span>
+                                <span class="stat-value negative">R$ 3.200,00</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Saldo</span>
+                                <span class="stat-value positive">R$ 1.300,00</span>
+                            </div>
+                        </div>
+                        <div class="report-insights">
+                            <h5>💡 Insights personalizados:</h5>
+                            <ul>
+                                <li>Você gastou 15% menos com alimentação este mês</li>
+                                <li>Sua maior despesa foi "Moradia" (45% do total)</li>
+                                <li>Recomendamos economizar R$ 200 para sua meta</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>O que nossos usuários dizem</h2>
+                <p>Milhares de pessoas já transformaram suas finanças com o Up Money</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-content">
+                        <p>"Nunca pensei que controlar minhas finanças pudesse ser tão simples. Agora faço tudo pelo WhatsApp e recebo insights incríveis!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Maria Silva</h4>
+                            <span>Empresária</span>
+                        </div>
+                        <div class="rating">⭐⭐⭐⭐⭐</div>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-content">
+                        <p>"O Up Money me ajudou a economizar R$ 500 por mês com análises automáticas. Simplesmente revolucionário!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>João Santos</h4>
+                            <span>Desenvolvedor</span>
+                        </div>
+                        <div class="rating">⭐⭐⭐⭐⭐</div>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="testimonial-content">
+                        <p>"Finalmente um sistema financeiro que entende como eu falo. Uso todos os dias e não consigo mais viver sem!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Ana Costa</h4>
+                            <span>Consultora</span>
+                        </div>
+                        <div class="rating">⭐⭐⭐⭐⭐</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Perguntas Frequentes</h2>
+                <p>Tire suas dúvidas sobre o Up Money</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="faq-question">
+                        <h3>Como funciona a segurança dos meus dados?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Utilizamos criptografia de ponta a ponta e seguimos os mais altos padrões de segurança bancária. Seus dados nunca são compartilhados com terceiros e ficam protegidos em servidores seguros.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="faq-question">
+                        <h3>Posso cancelar minha assinatura a qualquer momento?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim, você pode cancelar sua assinatura a qualquer momento sem taxas ou multas. Basta enviar uma mensagem para nossa equipe de suporte.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="faq-question">
+                        <h3>O Up Money funciona com todos os bancos?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>O Up Money funciona independente do seu banco. Você registra as transações manualmente via WhatsApp. No plano Avançado, oferecemos integração automática com os principais bancos do Brasil.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="faq-question">
+                        <h3>Existe período de teste gratuito?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim! Oferecemos 7 dias de teste gratuito em todos os planos. Você pode experimentar todas as funcionalidades sem compromisso.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="500">
+                    <div class="faq-question">
+                        <h3>Como faço para mudar de plano?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Você pode fazer upgrade ou downgrade do seu plano a qualquer momento através do WhatsApp. As mudanças são aplicadas imediatamente e você paga apenas a diferença proporcional.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final Section -->
+    <section id="cta-final" class="cta-final">
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2>Comece hoje mesmo a transformar suas finanças</h2>
+                <p>Junte-se a milhares de usuários que já descobriram a forma mais inteligente de controlar o dinheiro</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-primary btn-large">Começar Gratuitamente</a>
+                    <a href="#" class="btn btn-whatsapp">
+                        <span class="whatsapp-icon">📱</span>
+                        Falar no WhatsApp
+                    </a>
+                </div>
+                <div class="cta-guarantee">
+                    <span>✅ 7 dias grátis</span>
+                    <span>✅ Cancele quando quiser</span>
+                    <span>✅ Suporte 24/7</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Up Money</h3>
+                    <p>O sistema financeiro inteligente que transforma sua relação com o dinheiro.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Produto</h4>
+                    <ul>
+                        <li><a href="#beneficios">Benefícios</a></li>
+                        <li><a href="#como-funciona">Como Funciona</a></li>
+                        <li><a href="#precos">Preços</a></li>
+                        <li><a href="#demo">Demonstração</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Suporte</h4>
+                    <ul>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#">Contato</a></li>
+                        <li><a href="#">Central de Ajuda</a></li>
+                        <li><a href="#">Status</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Termos de Uso</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Segurança</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Up Money. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
+</body>
 </html>
